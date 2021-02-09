@@ -1,6 +1,5 @@
 <?php
-require __DIR__ . '\header.php';
-require __DIR__ . '\backend/init.php';
+require 'header.php';
 
 if (isset($_SESSION['userId'])) {
     $user = selectOne(
@@ -12,6 +11,7 @@ if (isset($_SESSION['userId'])) {
 } else {
     header("Location: login.php");
 }
+$instructions = select("SELECT id, title, description FROM instructions WHERE creator = :id", [":id" => $_SESSION['userId']]);
 ?>
 
 <head>
@@ -29,23 +29,29 @@ if (isset($_SESSION['userId'])) {
         <div class="container">
           <div id="list">
             <div id="card-content">
-            <table>
-                <thead>
-                    <th>Title</th>
-                    <th>Descriptie</th>
-                </thead>
-                <tbody>
+                <div class="flex list_top" >
+                    <h3>Titel</h3>
+                    <h3>Beschrijving</h3>
+                </div>
+                <div class="list_content">
                     <?php
-                        $instructions = select("SELECT id, title, description FROM instructions WHERE creator = :id", [":id" => $_SESSION['userId']]);
-                        foreach($instructions as $instruction){
-                            echo "<tr>";
-                            echo "<td> <a href='instructions.php?id=". $instruction['id'] ."'>". $instruction['title']. "</a></td>";
-                            echo "<td>". $instruction['description']. "</td>";
-                            echo "</tr>";
-                        }
+                    foreach($instructions as $instruction){
+                        $instructionTitle = $instruction['title'];
+                        $instructionDesc = $instruction['description'];
+                        ?>
+                        <a class="list_item flex" href='instructions.php?id=<?=$instruction['id']?>'>
+                        <div class="listTitles">
+                            <h4><?= $instructionTitle ?></h4>
+                        </div>
+
+                        <div class="listDesc">
+                            <p><?= $instructionDesc ?></p>
+                        </div>
+                        </a>
+
+                    <?php    }
                     ?>
-                </tbody>
-            </table>
+                </div>
             </div>
         </div>
         </div>

@@ -120,10 +120,27 @@ label {
   width: 700px;
   padding: 15px;
 }
-#list table{
+.list_top {
+  justify-content: space-between;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
-#list th, thead{
-  border: 1px solid black;
+
+.list_top h3 {
+  width: 50%;
+  color: #03357c;
+}
+
+.list_item {
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #03357c;
+  border-bottom: 1px solid #03357c;
+}
+
+.list_item:hover {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(248,174,205,0.4) 35%, rgba(255,255,255,1) 100%);
 }

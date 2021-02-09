@@ -1,100 +1,99 @@
-
 /*font-family: 'Cairo', sans-serif;
 font-family: 'Quicksand', sans-serif;*/
 
-*
-{
+* {
     padding: 0;
     margin: 0;
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 0 auto;
 }
-header
-{
+
+header {
     padding: 3% 0% 3% 0%;
     background: #03357c;
 }
-header .container
-{
-    width: 60%;
+
+header .container {
+    width: 85%;
     margin: 0 auto;
     background: transparent;
 }
-header nav
-{
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-}
-header .links
-{
-    display: flex;
+
+header nav {
     justify-content: space-around;
-    align-items: center;
+    margin: 0 auto;
 }
-header .links a
-{
-    padding: 15px 0px 15px 0px;
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+header .links a {
+    padding: 15px;
     font-family: 'Cairo', sans-serif;
     text-decoration: none;
     color: #f8aecd;
     font-size: 2rem;
     font-weight: bold;
 }
-header .links a:hover
-{
+
+header .links a:hover {
     color: #ffffff;
 }
-header .logo
-{
+
+.logo {
+    width: 180px;
     padding: 15px 0px 15px 0px;
     display: flex;
     justify-content: center;
 }
-header .logo a
-{
+
+.logo a {
     display: flex;
     justify-content: center;
 }
-header .logo img
-{
-    width: 40%;
+
+.logo img {
+    width: 100%;
 }
-.header 
-{
+
+.header {
     background: #03357c;
     position: fixed;
     top: 0;
     width: 100%
 }
-  
+
 
 /*headerstart*/
-.start header
-{
+.start header {
     padding: 0% 0% 0% 0%;
     background: #ffcc00;
 }
-.start header .container
-{
+
+.start header .container {
     width: 60%;
     margin: 0 auto;
     background: transparent;
 }
-.start header nav
-{
+
+.start header nav {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.start header .start-links
-{
+
+.start header .start-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.start header .start-links a
-{
+
+.start header .start-links a {
     padding: 15px 0px 15px 0px;
     font-family: 'Cairo', sans-serif;
     text-decoration: none;
@@ -102,27 +101,27 @@ header .logo img
     font-size: 2rem;
     font-weight: bold;
 }
-.start header .start-links a:hover
-{
+
+.start header .start-links a:hover {
     color: #ffffff;
 }
-.start header .start-logo
-{
+
+.start header .start-logo {
     padding: 15px 0px 15px 0px;
     display: flex;
     justify-content: center;
 }
-.start header .start-logo a
-{
+
+.start header .start-logo a {
     display: flex;
     justify-content: center;
 }
-.start header .start-logo img
-{
+
+.start header .start-logo img {
     width: 40%;
 }
-.start .header 
-{
+
+.start .header {
     background: #ffcc00;
     position: fixed;
     top: 0;
@@ -130,100 +129,121 @@ header .logo img
 }
 
 /*footer*/
-footer{
+footer {
     width: 100%;
     justify-content: space-between;
     background-color: #03357c;
-    color:#f8aecd;
+    color: #f8aecd;
     text-align: center;
     font-family: 'Cairo', sans-serif;
 }
-footer img{
+
+footer img {
     margin: 10px;
 }
+
 /*instruction page*/
-.instructionContainer{
-    display:flex;
-    flex-direction: row-reverse;
-    border:1px black solid;
-    padding:10px;
-    background:#03357c;
+.instructionPage {
+    background: #03357c;
     font-family: 'Cairo', sans-serif;
+    border-bottom: 1px solid #f8aecd;
 }
-.instructionContainer h2{
+
+.instructionContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.instructionContainer h2 {
     font-family: 'Quicksand', sans-serif;
 }
+
 /*instructions*/
-.instructions{
-    background:none;
-    width:60%;
-    min-height:750px;
-    padding:3%;
+.instructions {
+    background: none;
+    width: 60%;
+    min-height: 750px;
+    padding: 3%;
 }
-.instructions iframe{
+
+.instructions iframe {
     width: 100%;
     height: 100%;
     min-height: 70vh;
     overflow: hidden;
     /*min-height: 800px;*/
 }
-.instruction{
-    background:#01563f;
+
+.instruction {
+    background: #01563f;
     color: #f8aecd;
     border: 2px solid black;
-    padding:10px;
+    padding: 10px;
     min-height: 100px;
     max-width: 100%;
 }
-.instruction img{
+
+.instruction img {
     min-width: 100%;
-    max-width:100%;
+    max-width: 100%;
     max-height: 100%;
 }
-.instruction iframe{
-    width:100%;
-    height:100%;
+
+.instruction iframe {
+    width: 100%;
+    height: 100%;
     min-height: 360px;
     align-items: center;
 }
-.addInstruction{
-    margin:auto;
-    width:80%
+
+.addInstruction {
+    margin: auto;
+    width: 80%
 }
-.addInstruction button{
-    width:100%;
-    height:100px;
+
+.addInstruction button {
+    width: 100%;
+    height: 100px;
 }
-.controlContainer{
+
+.controlContainer {
     width: 100%;
     margin-bottom: 35px;
 }
-.control{
+
+.control {
     float: right;
     padding: 5px;
 }
-.control input{
+
+.control input {
     background: none;
     border: none;
     font-size: larger;
 }
-.control input:hover{
+
+.control input:hover {
     color: white;
 }
-.overlay{
+
+.overlay {
     display: none;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(90, 90, 90, 0.5);
     overflow: hidden;
 }
-.addWindow{
-    position:fixed;
-    top:50%;
-    left:50%;
+
+.addWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     height: 300px;
     width: 400px;
@@ -232,21 +252,24 @@ footer img{
     background-color: #5b6467;
     background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }
-.addWindow button{
+
+.addWindow button {
     width: 25px;
     height: 20px;
     position: absolute;
     top: 20px;
     right: 20px;
 }
-.addWindow select{
-    position:absolute;
+
+.addWindow select {
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
-.addWindow textarea{
+
+.addWindow textarea {
     display: block;
-    position:absolute;
+    position: absolute;
     left: 50%;
     top: 60px;
     transform: translate(-50%);
@@ -255,23 +278,26 @@ footer img{
     padding: 1px;
     font-size: larger;
 }
-.addWindow input[type=file]{
+
+.addWindow input[type=file] {
     display: none;
-    position:absolute;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%);
 }
-.addWindow input[type=text]{
+
+.addWindow input[type=text] {
     display: none;
-    position:absolute;
+    position: absolute;
     left: 50%;
     top: 50%;
     width: 200px;
     padding: 5px;
     transform: translate(-50%);
 }
-.addWindow input[type=submit]{
+
+.addWindow input[type=submit] {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -279,148 +305,190 @@ footer img{
     height: 30px;
     border-radius: 10%;
 }
-.addWindow label{
+
+.addWindow label {
     display: none;
-    position:absolute;
+    position: absolute;
     left: 50%;
     bottom: 20px;
     transform: translate(-50%);
 }
 
 /*info & controls*/
-.instructionsControls{
-    background: #03357c;
-    width:35%;
-    min-height:100px;
-    max-height:100px;
+.instructionsControls {
+    min-height: 100px;
+    max-height: 100px;
 }
-.instructionsInfo{
-    padding:10px;
+
+.instructionsInfo {
+    padding: 10px;
     color: #f8aecd;
-    background: #03357c;
     border: 2px solid black;
 }
-.instructionsTitle{
-    text-align:center;
-    height:30px;
-    border:grey 1px solid;
-    background:darkgreen;
+
+.instructionsTitle {
+    text-align: center;
+    height: 30px;
+    border: grey 1px solid;
+    background: darkgreen;
+    padding: 0.5rem;
 }
-.instructionsCreator{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+.instructionsCreator {
+    display: flex;
 }
-.infoDetails{
-    padding:25px
+
+.infoDetails {
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
-.controls{
-    background: #03357c;
-    padding:20px;
+
+.controls {
+    height: 4rem;
+    margin: 0.5rem 0;
 }
-.controls .remove{
+
+.controls .remove {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
     column-gap: 1px;
 }
-.userchanger{
+
+.userchanger {
     display: none;
     position: fixed;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     width: 450px;
     height: 300px;
 }
-.userchanger form{
+
+.userchanger form {
     width: 100%;
     height: 100%;
 }
-.userchanger input[type=text]{
+
+.userchanger input[type=text] {
     display: inline;
     height: 30px;
     padding: 5px;
     font-size: larger;
 }
-.userchanger input[type=submit]{
+
+.userchanger input[type=submit] {
     display: block;
     color: black;
     width: 150px;
 }
-.userchanger label{
+
+.userchanger label {
     display: inline;
 }
-#qrBlock{
+
+#qrBlock {
     flex-direction: column;
-    padding-top:10px;
+    padding-top: 10px;
 }
-.controls button{
-    width:100px;
-    height:50px;
-    border-radius: 15%;
+
+.btn {
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
-.controls input{
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(0, 26, 64, 0.35);
+    background-color: #f8aecd;
+    border: 1px solid #f8aecd;
+    color: black;
+}
+
+.btn_remove:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.controls input {
     display: none;
     color: red;
-    width:100px;
-    height:50px;
+    width: 100px;
+    height: 50px;
 }
-.controls img{
+
+.controls img {
     padding: 10px;
     border: 2px black solid;
     background: grey;
 }
 
-.flex{
+.flex {
     display: flex;
 }
+
 /*============ ADMIN EN ACCOUNT PAGINA============== */
-.twobanner{
-	display: grid;
-	background-color: #03357c;
+.twobanner {
+    display: grid;
+    background-color: #03357c;
     height: 400px;
 }
-.twobanner h1{
-	font-family: 'Cairo', sans-serif;
-	color: #f8aecd;
-	font-weight: bolder;
-	font-size: 5em;
+
+.twobanner h1 {
+    font-family: 'Cairo', sans-serif;
+    color: #f8aecd;
+    font-weight: bolder;
+    font-size: 5em;
     padding-top: 5%;
 }
-.twocontainer{
+
+.twocontainer {
     background: #f8aecd;
     padding: 50px 0px;
     height: 426px;
 }
-.admincontainer{
+
+.admincontainer {
     background: #f8aecd;
     padding: 50px 0px;
     height: 426px;
 }
-.align{
+
+.align {
     width: 200px;
     display: inline-block;
 }
-.cursor{
+
+.cursor {
     cursor: pointer;
 }
-.card{
+
+.card {
     background: #fbfbfb;
     border-radius: 8px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-    padding: 15px; 
+    padding: 15px;
 }
-ul{
+
+ul {
     margin-left: 20px;
 }
-ul li{
-    list-style:circle;
+
+ul li {
+    list-style: circle;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
 }
-.edit-button{
+
+.edit-button {
     background: #03357c;
     border: none;
     border-radius: 21px;
@@ -435,9 +503,10 @@ ul li a{
     width: 153px;
     display: inline;
 }
-.delete-button{
+
+.delete-button {
     display: inline;
-    background:red;
+    background: red;
     border: none;
     border-radius: 21px;
     box-shadow: 0px 1px 8px red;
@@ -448,10 +517,12 @@ ul li a{
     transition: 0.25s;
     width: 153px;
 }
-.toedit-button{
+
+.toedit-button {
     margin-top: 20px;
 }
-.toedit-button a{
+
+.toedit-button a {
     text-decoration: none;
     background: #03357c;
     border: none;
@@ -463,96 +534,118 @@ ul li a{
     display: inline;
     padding: 5px;
 }
-.delete-card{
+
+.delete-card {
     margin-top: 20px;
 }
+
 option[value=""][disabled] {
     display: none;
-  }
-.pink{
+}
+
+.pink {
     background: #f8aecd;
 }
-.small-size{
+
+.small-size {
     width: 360px;
     margin-left: 26%;
 }
-.size{
+
+.size {
     width: 1200px;
     margin: 0 auto;
 }
-table{
+
+table {
     border-collapse: collapse;
 }
+
 th, td {
     /* border: 1px solid black; */
     border-bottom: 1px solid black;
     border-radius: 10px;
-  }
+}
+
 /* ========================= */
 
-@media only screen and (max-width: 1300px){
-    .instructionContainer{
-        padding-top:2%;
+@media only screen and (max-width: 1300px) {
+    .instructionContainer {
+        padding-top: 2%;
     }
 }
-@media only screen and (max-width: 1200px){
-    .instructionContainer{
-        padding-top:3%;
+
+@media only screen and (max-width: 1200px) {
+    .instructionContainer {
+        padding-top: 3%;
     }
 }
-@media only screen and (max-width: 900px){
-    .instructionContainer{
+
+@media only screen and (max-width: 900px) {
+    .instructionContainer {
         display: block;
-        padding-top:5%;
+        padding-top: 5%;
     }
-    .instructions{/*temp*/
-        width:94%;
+
+    .instructions { /*temp*/
+        width: 94%;
         margin: auto;
     }
-    .instructionsControls{
-        width:100%;
+
+    .instructionsControls {
+        width: 100%;
         padding-bottom: 15%;
     }
-    .controls{
+
+    .controls {
         display: none;
     }
 }
-@media only screen and (max-width: 800px){
-    .instructionContainer{
+
+@media only screen and (max-width: 800px) {
+    .instructionContainer {
         display: block;
     }
 }
-@media only screen and (max-width: 750px){
-    .instructionContainer{
-        padding-top:14%;
+
+@media only screen and (max-width: 750px) {
+    .instructionContainer {
+        padding-top: 14%;
     }
 }
-@media only screen and (max-width: 650px){
-    .instructionContainer{
-        padding-top:20%;
+
+@media only screen and (max-width: 650px) {
+    .instructionContainer {
+        padding-top: 20%;
     }
 }
-@media only screen and (max-width: 550px){
-    .instructionContainer{
-        padding-top:23%;
+
+@media only screen and (max-width: 550px) {
+    .instructionContainer {
+        padding-top: 23%;
     }
 }
-@media only screen and (max-width: 500px){
-    .instructionContainer{
-        padding-top:25%;
+
+@media only screen and (max-width: 500px) {
+    .instructionContainer {
+        padding-top: 25%;
     }
-    .addWindow{
+
+    .addWindow {
         width: 100vw;
     }
 }
-@media only screen and (max-width: 400px){
-    .instructionContainer{
-        padding-top:25%;
+
+@media only screen and (max-width: 400px) {
+    .instructionContainer {
+        padding-top: 25%;
     }
-    .addWindow{
+
+    .addWindow {
         width: 100vw;
     }
-    .addWindow textarea{
+
+    .addWindow textarea {
         width: 90vw;
     }
 }

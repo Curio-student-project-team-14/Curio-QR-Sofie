@@ -1,6 +1,5 @@
 <?php
-require __DIR__.'/./header.php';
-require __DIR__.'/./backend/init.php';
+require("header.php");
 
 if(isset($_SESSION['userId'])){
     $user = selectOne(
@@ -15,7 +14,6 @@ if(isset($_SESSION['userId'])){
 ?>
 <head>
     <title>Instructie aanmaken</title>
-    <link rel="stylesheet" href="css/login.css">
 </head>
 <main class="loginmain">
 <div class="banner">

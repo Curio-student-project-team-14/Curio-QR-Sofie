@@ -1,79 +1,98 @@
-*{
-	padding: 0;
-	margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 
 }
 
-.container{
-	width: 1200px;
+.container {
+    width: 85%;
     margin: 0 auto;
+}
+
+.sub_title {
+    color: #03357c !important;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.4rem;
 }
 
 /*Bannner*/
 
-.banner{
-	display: grid;
-	/*justify-content: center;*/
-	/*align-content: center;*/
-	/*background: url("../backend/img/curio-prinsentuin-oudenbosch-klas.jpg");*/
-	background-color: #03357c;
-	height: 300px;
+.banner {
+    display: grid;
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*background: url("../backend/img/curio-prinsentuin-oudenbosch-klas.jpg");*/
+    background-color: #03357c;
+    height: 300px;
 }
-.bannertext h1{
-	font-family: 'Cairo', sans-serif;
-	color: #f8aecd;
-	font-weight: bolder;
-	font-size: 5em;
-	padding-top: 5%;
+
+.bannertext h1 {
+    font-family: 'Cairo', sans-serif;
+    color: #f8aecd;
+    font-weight: bolder;
+    font-size: 5em;
+    padding-top: 5%;
 }
-.bannertext h2{
-	font-family: 'Cairo', sans-serif;
-	color: #f8aecd;
-	font-size: 2em;
+
+.bannertext h2 {
+    font-family: 'Cairo', sans-serif;
+    color: #f8aecd;
+    font-size: 2em;
 }
 
 /*main*/
 
-.maincontent{
-	background-color:#f8aecd;
+.maincontent {
+    background-color: #f8aecd;
 }
 
-.maincontent h3{
-	color: #03357c;
-	font-size: 2.2em;
+.maincontent h3 {
+    color: #03357c;
+    font-size: 2.2em;
 }
 
-.maincontent p{
-		font-family: 'Quicksand', sans-serif; 
-		color: #03357c;
-		font-size: 0.9em;
+.maincontent p {
+    font-family: 'Quicksand', sans-serif;
+    color: #03357c;
+    font-size: 0.9em;
 }
 
-.maincontent .articles{
-	display: grid;
-  grid-template-columns: auto auto;
-  padding: 2% 0;
+.maincontent .articles {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2% 0;
 }
 
-.maincontent .article{
-	padding: 3%;
+.article {
+    z-index: 9;
+    position: relative;
+    background: #ffebf3;
+    box-shadow: 0 0 15px rgba(125, 1, 52, 0.25);
+    max-width: 100%;
+    min-height: 210px;
+    border-radius: 4px;
+    margin: 5px;
+}
+.article:hover {
+    background-color: #f8aecd;
+    transform: scale(.95);
 }
 
-.maincontent .article img{
-	width: 290px;
-	height: 170px;
-	float: left;
-	margin-right: 2%; 
+.maincontent .article img {
+    width: 290px;
+    height: 170px;
+    float: left;
+    margin-right: 2%;
 }
 
 
-.maincontent .article a{
-	color: #78034B;
-	font-weight: bold;
+.maincontent .article a {
+    color: #78034B;
+    font-weight: bold;
 }
 
-.maincontent .article h4{
-	font-family: 'Cairo', sans-serif;
-	color: #03357c;
-	font-size: 1.3em;
+.maincontent .article h4 {
+    font-family: 'Cairo', sans-serif;
+    color: #03357c;
+    font-size: 1.3em;
 }

@@ -5,7 +5,6 @@ require("header.php");
 // header('Location: ../index.php');
 // exit();} 
 
-    require __DIR__.'/./backend/init.php';
     $id = $_SESSION['userId'];
 
 $title = selectOne(
