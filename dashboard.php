@@ -47,7 +47,7 @@ $user = selectOne("SELECT * FROM users WHERE id = :id",
 
                     </div>
                 </a>
-
+                <?php if ($user['rank'] === 'superadmin') {?>
                 <?= " <a href='users_admin/edit.php?id=${user['id']}'>" ?>
                 <div class="article">
                     <img src="backend/img/qr5.png" alt="People buying stuff">
@@ -59,6 +59,7 @@ $user = selectOne("SELECT * FROM users WHERE id = :id",
                     </p>
                 </div>
                 </a>
+                <?php } else {}?>
 
                 <?= " <a href='u_account/my_account.php?id=${user['id']}'>" ?>
                 <div class="article">
