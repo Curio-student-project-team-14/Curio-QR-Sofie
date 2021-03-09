@@ -57,6 +57,4 @@ $instructions = select("SELECT id, title, description FROM instructions WHERE cr
         </div>
     </div>
 </main>
-<?php
-require __DIR__ . '\footer.php';
-?>
+<?php require "footer.php";?>

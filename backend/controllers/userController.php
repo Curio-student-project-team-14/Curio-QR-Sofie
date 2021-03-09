@@ -23,7 +23,9 @@ if ($_POST['formType'] == 'edit') {
         ':email'    => $email,
         ':user_rank'     => $rank
     ]);
-    redirect("../../users_admin/detail.php?id=$id");
+    
+    header("location: ../../users_admin/detail.php?id=$id");
+    
     exit();
 
 
@@ -40,7 +42,8 @@ if ($_POST['formType'] == 'edit') {
         ':username' => $username,
         ':email'    => $email,
     ]);
-    redirect("../../u_account/my_account.php?id=$id");
+
+    header("location: ../../u_account/my_account.php?id=$id");
 
     exit();
 
@@ -60,7 +63,10 @@ if ($_POST['formType'] == 'edit') {
     query("DELETE FROM users WHERE id = :id", [
         ':id' => $id
     ]);
-    redirect("../../dashboard.php");
+
+    $msg = "Succesvol gebruiker verwijderd";
+
+    header("location: ../../dashboard.php?message=$msg");
     exit();
 
 
@@ -80,7 +86,11 @@ if ($_POST['formType'] == 'edit') {
     query("DELETE FROM users WHERE id = :id", [
         ':id' => $id
     ]);
-    redirect("../../index.php");
+
+    $msg = "Succesvol gebruiker verwijderd";
+
+    header("location: ../../dashboard.php?message=$msg");
+
     exit();
 }
 

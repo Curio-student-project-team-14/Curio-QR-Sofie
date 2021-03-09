@@ -45,6 +45,5 @@ if(isset($_SESSION['userId'])){
         </div>
     </div>
 </main>
-<?php
-require __DIR__.'\footer.php';
-?>
+</main>
+<?php require "footer.php";?>

@@ -150,6 +150,5 @@ if (!$instruction) {
         </div>
     </div>
 </div>
-<?php
-require __DIR__ . '\footer.php';
-?>
+</main>
+<?php require "footer.php";?>
