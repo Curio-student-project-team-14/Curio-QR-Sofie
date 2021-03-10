@@ -59,7 +59,8 @@ header .links a:hover {
 }
 
 .logo img {
-    width: 100%;
+    width: 70%;
+    height: min-content;
 }
 
 .header {

@@ -1,6 +1,5 @@
 <?php
-require __DIR__ . './../backend/init.php';
-
+require("../users_admin/header.php");
 
 if(!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] != true){//should make this userid
     header('Location: ../../index.php');
@@ -14,12 +13,7 @@ $user = selectOne("SELECT * FROM users WHERE id = :id", [
 
 ?>
 
-<body>
-    <header>
-        <?php
-        require("../users_admin/header.php");
-        ?>
-    </header>
+<main>
     <div class="twobanner">
         <h1 class="size">Mijn Account:</h1>
     </div>
@@ -54,9 +48,5 @@ $user = selectOne("SELECT * FROM users WHERE id = :id", [
             </div>
         </div>
     </div>
-    <footer>
-        <?php
-        require("../users_admin/footer.php");
-        ?>
-    </footer>
-</body>
+</main>
+<?php require("../users_admin/footer.php"); ?>
