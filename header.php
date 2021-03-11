@@ -1,7 +1,5 @@
 <?php
-require __DIR__.'/./backend/init.php';
-
-
+require __DIR__ . '/./backend/init.php';
 ?>
 <!DOCTYPE html>
 <html lang="nl">

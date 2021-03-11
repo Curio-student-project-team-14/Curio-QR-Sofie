@@ -17,7 +17,6 @@ $qrs = select("SELECT * FROM instructions WHERE creator = :creator", [
 ]);
 ?>
     <main>
-
         <div class="twobanner">
             <h1 class="size">Mijn Account:</h1>
         </div>

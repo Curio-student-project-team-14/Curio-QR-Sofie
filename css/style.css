@@ -33,7 +33,7 @@ header nav {
     /*align-items: center;*/
 }
 
-header .links a {
+header .links a, header .links p {
     padding: 15px;
     font-family: 'Cairo', sans-serif;
     text-decoration: none;
